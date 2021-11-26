@@ -1,0 +1,74 @@
+@import url('https://fonts.googleapis.com/css2?family=Besley&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Raleway:ital,wght@1,300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Comfortaa&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Alumni+Sans:ital,wght@1,300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Caveat&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Grenze+Gotisch&display=swap');
+
+/* CSS Document */
+
+.Encabezado {
+	font-family: 'Besley', serif;
+	font-size: 31px;
+	font-weight: bolder;
+	color: #396A64;
+	background-color: #EAF8FF;
+	text-align: center;
+	text-decoration: none;
+	border: 7px solid #cad5d4;
+	margin: auto
+}
+
+.Frase1 {
+	font-family: 'Raleway', sans-serif;
+	font-size: 16px;
+	font-weight: lighter;
+	color: #FFFFFF;
+	background-color: #A75E2F;
+	text-align: left;
+	text-decoration: underline;
+	border: 3px solid #926E68;
+}
+
+.Frase2 {
+	font-family: 'Comfortaa', cursive;
+	font-size: 17px;
+	font-weight: normal;
+	color: #F9C134;
+	background-color: #333E3F;
+	text-align: right;
+	text-decoration: none;
+	border: 6px dashed #729598;
+}
+
+.Frase3 {
+	font-family: 'Alumni Sans', sans-serif;
+	font-size: 25px;
+	font-weight: bold;
+	color: #000000;
+	background-color: #F3E2B3;
+	text-align: center;
+	text-decoration: none;
+	border: 6px double #F03613;
+}
+.Frase4 {
+	font-family: 'Caveat', cursive;
+	font-size: 25px;
+	font-weight: bold;
+	color: #D3CACE;
+	background-color: #21303b;
+	text-align: left;
+	text-decoration: underline;
+	border: 12px groove #CB1F5A;
+}
+
+.Frase5 {
+	font-family: 'Caveat', cursive;
+	font-size: 25px;
+	font-weight: lighter;
+	color: #D2CED1;
+	background-color: #06283B;
+	text-align: right;
+	text-decoration: overline;
+	border: 12px dotted #7C9F24;
+}

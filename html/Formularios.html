@@ -1,0 +1,141 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Formulario</title>
+<link href="../css/Styles.css" rel="stylesheet" type="text/css">
+</head>
+
+<body>
+	<header>
+	<h1>Formularios en HTML</h1>
+	</header>
+<nav>
+   <ul>
+    <li><a href="html/mi_primera_pagina.html">Mi primera página web</a></li>
+	<li><a href="html/tablas Sinai.html">Tablas</a></li>    
+	<li><a href="html/listas.html">Listas</a></li>
+    <li><a href="html/Enlaces.html">Enlaces</a></li>
+	<li><a href="html/Imagenes.html">Imagenes</a></li>    
+
+  </ul>
+  <ul>
+	<li><a href="html/video.html">Video</a></li>
+    <li><a href="html/audio.html">Audio</a></li>
+	<li><a href="html/flexbox.html">Flexbox</a></li>
+    <li><a href="html/Animaciones.html">Animate</a></li>
+	<li><a href="Formularios.html">Formularios</a></li>
+  </ul>
+	</nav>
+	<main>
+	<section>
+	  <h2>Formulario simple</h2>
+		<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quia quas maxime, illo sit, nam iusto.</p>
+		<form action="" method="get">
+			<label>Nombre</label>
+			<input type="text"	id="nombre" name="nombre">
+		  <label>Apellidos</label>
+			<input name="apellidos" type="text" id="apellidos">
+			<input type="submit" value="enviar">
+		</form>
+	</section>
+	<section>
+		<h2>Formulario usando radiobutton</h2>
+		<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Itaque delectus voluptas pariatur, obcaecati quas sint.</p>
+		<from id="datos1" name="datos1" action="action_page.html" method="post" > 
+		  <label for="nombres">Nombre:</label>
+		  <input type="text" name:"nombres" id="nombres">
+		  <label for="apellidos">Apellidos:</label>
+		  <input type="text" name="apellidos" id="apellido">
+		  <br>
+		  <label>Genero&nbsp;</label>
+		  <input name="genero" type="radio" id="radio" title="genero" value="femenino">
+		  <label for="genero">Femenino&nbsp;</label>	
+		  <input name="genero" type="radio" id="radio2" title="genero" value="masculino">
+		  <label for="genero">Masculino&nbsp;</label>	
+		 <a href="action_page.html">
+		  <input name="submit" type="submit" id="submit" formmethod="GET" value="Enviar">  </a>
+	    </from>
+	 	</section>
+	<section>
+	  <h2>Formulario usando checkbox y otros</h2>
+	  <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Itaque delectus voluptas pariatur, obcaecati quas sint.</p>
+	  <from id="datos2" name="datos1" action="action_page.html" method="post">
+	    <label for="nombres2">Nombre:</label>
+	    <input type="text" name:"nombres" id="nombres2">
+	    <label for="apellidos2">Apellidos:</label>
+	    <input type="text" name="apellido" id="apellido2">
+	    <br>
+	    <label>Genero&nbsp;</label>
+	    <input name="genero" type="radio" id="radio3" title="genero" value="femenino">
+	    <label for="genero2">Femenino&nbsp;</label>
+	    <input name="genero" type="radio" id="radio4" title="genero" value="masculino">
+	    <label for="genero2">Masculino&nbsp;</label>
+		<p>
+			<label>Elige de la lista el genero musical que mas te guste</label>
+			<br>
+		  <label>
+		    <input type="checkbox" name="Musica favorita" value="pop" id="Musicafavorita_0">
+		    Pop</label>
+		  <br>
+		  <label>
+		    <input type="checkbox" name="Musica favorita" value="rock" id="Musicafavorita_1">
+		    Rock</label>
+		  <br>
+		  <label>
+		    <input type="checkbox" name="Musica favorita" value="jazz" id="Musicafavorita_2">
+		    Jazz</label>
+		  <br>
+		  <label>
+		    <input type="checkbox" name="Musica favorita" value="blues" id="Musicafavorita_3">
+		    Blues</label>
+		  <br>
+			<label>
+		    <input type="checkbox" name="Musica favorita" value="alternativa" id="alternativa">
+		    Alternativa</label>
+	    </p>
+		  <label for="pais"> Nacionalidad: </label>
+	    <select name="pais" id="pais">
+		  <option value="argentina">Argentina</option>
+		  <option value="chile">Chile</option>
+		  <option value="francia">Francia</option>
+		  <option value="lituania">Lituania</option>
+		  <option value="mexico">Mexico</option>
+		  </select>
+<a href="action_page.html">
+        <input name="submit2" type="submit" id="submit2" formmethod="GET" value="Enviar">
+      </a> </from>
+	  </section>
+	<section>
+	  <h2>Formulario organizado dentro de una tabla</h2>
+	  <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Reiciendis sunt odit commodi omnis, pariatur quibusdam.</p>
+		<form action="action_page.html" method="get">
+		<table width="50%%" border="0">
+  <tbody>
+    <tr>
+      <td><label for="nombre">Nombre:</label></td>
+      <td><input type="text" id="nombre" name="nombre"></td>
+    </tr>
+    <tr>
+      <td><label for="apellidos">Apellidos:</label></td>
+      <td><input type="text" id="apellidos" name="apellidos"></td>
+    </tr>
+    <tr>
+      <td><label for="edad">Edad:</label></td>
+      <td><input type="number" id="edad" name="edad" min="1" max="99"></td>
+    </tr>
+    <tr>
+      <td><input type="submit" vale="ENVIAR"></td>
+      <td></td>
+    </tr>
+  </tbody>
+</table>
+</form>
+
+	  </section>
+</main>
+	<footer>
+	<h5>Elaborado por Ale Sinai Fernandez Lopez</h5>
+</footer>
+</body>
+</html>

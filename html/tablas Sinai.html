@@ -1,0 +1,506 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Tablas</title>
+	<style type="text/css">
+		*{
+			margin: 0;
+			padding: 0;
+		}
+		header, nav, main, footer{
+			width: 960px;
+			/*height: 50px;*/
+			background-color: #272D2F;
+			padding: 50px;
+			margin: 0 auto;
+		}
+		header{
+			text-align: center;
+			color: #F2F2F2;
+			font-size: 25px;
+		}
+		nav{
+ 			background-color: #FF8860;
+ 			height: 20px;
+ 			padding: 10px 50px;
+		}
+		main{
+			background-color: #FFED00;
+			height: auto;
+		}
+		footer{
+			background-color: #1F3D51;
+			height: 10px;
+			text-align: center;
+		}
+		section{
+		width: 760px;
+		height: auto;
+		background-color: #53CFDA;
+		margin: 20px auto;
+		padding: 20px 20px;
+		}
+		table{
+			background-color: #f2f2f2;
+			color: #F12761
+		}
+		th{
+			color: #161212;
+		}
+		#t01, #t01 th, #t01 td, #t02, t#02 th, #t02 td{
+			border-collapse: collapse
+		}
+		#t01, #t01 th, #t01 td{
+			border: 2px solid #003CAF;
+			padding:5px;
+			color: #272D2F
+		}
+		#t01 th{
+			background-color: #FFF2C3;
+			color: #680514;
+			text-align: left;
+		}
+		#t02, #t02 th, #t02 td{
+			border-spacing: 4px;
+			padding: 5px;
+			text-align: center;
+			color: #FE724C;
+		}
+		#t02 th{
+			background-color: #FFC529;
+			color: #272D2F;
+			text-align: center;
+		}
+		#t02, #t02 th, #t02 td{
+			border-sp: 4px;
+			padding: 5px;
+			text-align: center;
+			color: #FE724C
+		}
+		#t03 tr:nth-child(even){
+			background-color: #272D2F;
+			color: #F2F2F2;
+		}
+		#t03 tr:nth-child(odd){
+			background-color: #F2F2F2;
+			color: #272D2F;
+		}
+		#t03 th{
+			background-color: #272D2F;
+			color: #FFC529 
+		}
+		#t03, #t03 th, #t03 td{
+			padding: 5px;
+		}
+		#t04 td:nth-child(even){
+			background-color: #FFC529;
+			color:#272D2F;
+		}
+		#t04 td: nth-child(odd){
+			background-color: #FE724C;
+			color: #F2F2F2;
+		}
+		#t04 th{
+			background-color: #272D2F;
+			color: #F2F2F2;
+		}
+		#t04, #t04 th, #t04 td{
+			padding: 5px;
+		}
+		#t05 {
+			width: 640px;
+		}
+		#t05 th{
+			height: 50px;
+		}
+		#t05 td{
+			height: 60px;
+			padding-left:10px;
+			vertical-align: bottom;
+		}
+		#t05 tr:hover{
+			background-color: #272d2f;
+			color: #F2F2F2;
+		}
+		#t05 th{
+			backgroun color:#FFC529;
+			color: #272d2f
+		}
+		#t05, #t05 th, #t05 td{
+			border-collapse: collapse;
+		}
+		#t06 {
+			width: 100px;
+		}
+		#t06 th, #t06 td{
+			text-align: center;
+			border: 1px solid #FFC529;
+			border-collapse: collapse;
+			height: 25px;
+		}
+		#t06, #t06 th, #t06 td{
+			border-collapse: collapse;
+		}
+	</style>
+	
+	
+</head>
+
+<body>
+	<header>
+		<h1>Tablas en HTML</h1>
+	</header>
+	<nav></nav>
+<main>
+  <section>
+			<h2>Tabla simple</h2>
+			<table border="1">
+				<thead>
+					<tr>
+						<th>Nombre</th>
+						<th>Direccion</th>
+						<th>Telefono</th>
+					</tr>
+				</thead>
+				<tbody>
+					<tr>
+						<td>Luz Barrera </td>
+						<td>Calle flores #23</td>
+						<td>2222345678</td>
+					</tr>
+					<tr>
+						<td>Maria Ferndanda</td>
+						<td>Calle de la Rosa</td>
+						<td>2234567890</td>
+					</tr>
+					<tr>
+						<td>Paulina Jimenez</td>
+						<td>Calle Robles #98</td>
+						<td>222454567</td>
+					</tr>
+					<tr>
+						<td>Alejandra Lopez</td>
+						<td>Calle Tulipan L-1130</td>
+						<td>2224340954</td>
+					</tr>
+					<tr>
+						<td>Alicia Manchado</td>
+						<td>Calle Naranjos #312</td>
+						<td>2224092377</td>
+					</tr>
+				</tbody>
+				<foot></foot>
+			</table>
+  </section>
+<section>
+    <h2>Tablas con bordes colapsados</h2>
+		  <table id="t01" border="1">
+		    <thead>
+		      <tr>
+		        <th>Nombre</th>
+		        <th>Direccion</th>
+		        <th>Telefono</th>
+	          </tr>
+			</thead>
+			  <tbody>
+		      <tr>
+		       <td>Luz Barrera </td>
+			   <td>Calle flores #23</td>
+			   <td>2222345678</td>
+	          </tr>
+	           <tr>
+						<td>Maria Ferndanda</td>
+						<td>Calle de la Rosa</td>
+						<td>2234567890</td>
+					</tr>
+					<tr>
+						<td>Paulina Jimenez</td>
+						<td>Calle Robles #98</td>
+						<td>222454567</td>
+					</tr>
+					<tr>
+						<td>Alejandra Lopez</td>
+						<td>Calle Tulipan L-1130</td>
+						<td>2224340954</td>
+					</tr>
+					<tr>
+						<td>Alicia Manchado</td>
+						<td>Calle Naranjos #312</td>
+						<td>2224092377</td>
+					</tr>
+			  </tbody>
+			  <tfoot>
+			  </tfoot>
+	      </table>
+  	</section>
+  <section>
+		  <h2>Tablas que abarca mas de una columna</h2>
+		  <table id="t02" border="1">
+		    <thead>
+		      <tr>
+		        <th>Nombre</th>
+		        <th>Direccion</th>
+		        <th colspan="2">Telefonos</th>
+	          </tr>
+			  </thead>
+			  <tbody>
+		      <tr>
+		        <td>Luz Barrera </td>
+			    <td>Calle flores #23</td>
+			    <td>2222345678</td>
+				<td>22253676</td>
+	          </tr>
+		      <tr>
+		        <td>Maria Ferndanda</td>
+		        <td>Calle de la Rosa</td>
+		        <td>2234567890</td>
+				<td>2234567890</td>
+	          </tr>
+		      <tr>
+		        <td>Luis Pérez</td>
+		        <td>Lomas de Loreto</td>
+		        <td>2224341066</td>
+				<td>2234567809</td>
+	          </tr>
+		      <tr>
+		        <td>Mariana Lopez</td>
+		        <td>Lomas de Loreto</td>
+		        <td>2224341066</td>
+				<td>3456789876</td>
+	          </tr>
+		      <tr>
+		        <td>Pablo Ramirez</td>
+		        <td>Lomas de Loreto</td>
+		        <td>2224341066</td>
+				<td>3456789034</td>
+	          </tr>
+			  </tbody>
+			  <tfoot></tfoot>
+	      </table>
+  </section>
+  <section>
+		  <h2>Tabla con bandas o rayas horizontales de diferente color</h2>
+		  <table id="t03" border="1">
+		    <thead>
+		      <tr>
+		        <th>Nombre</th>
+		        <th>Direccion</th>
+		        <th>Telefono</th>
+	          </tr>
+	        </thead>
+		    <tbody>
+		      <tr>
+               <td>Luz Barrera </td>
+			   <td>Calle flores #23</td>
+			   <td>2222345678</td>
+	          </tr>
+	                <tr>
+						<td>Maria Ferndanda</td>
+						<td>Calle de la Rosa</td>
+						<td>2234567890</td>
+					</tr>
+					<tr>
+						<td>Paulina Jimenez</td>
+						<td>Calle Robles #98</td>
+						<td>222454567</td>
+					</tr>
+					<tr>
+						<td>Alejandra Lopez</td>
+						<td>Calle Tulipan L-1130</td>
+						<td>2224340954</td>
+					</tr>
+					<tr>
+						<td>Alicia Manchado</td>
+						<td>Calle Naranjos #312</td>
+						<td>2224092377</td>
+					</tr>
+	        </tbody>
+		    <foot></foot>
+	      </table>
+  </section>
+  <section>
+		  <h2>Tablas con bandas o rayas verticales de diferente color</h2>
+		  <table id="t04" border="1">
+		    <thead>
+		      <tr>
+		        <th>Nombre</th>
+		        <th>Direccion</th>
+		        <th>Telefono</th>
+				<th>Ciudad</th>
+	          </tr>
+	        </thead>
+		    <tbody>
+		      <tr>
+		       <td>Luz Barrera </td>
+			   <td>Calle flores #23</td>
+			   <td>2222345678</td>
+				 <td>Puebla</td>
+	          </tr>
+	          <tr>
+						<td>Maria Ferndanda</td>
+						<td>Calle de la Rosa</td>
+						<td>2234567890</td>
+						 <td>Puebla</td>
+					</tr>
+			  <tr>
+						<td>Paulina Jimenez</td>
+						<td>Calle Robles #98</td>
+						<td>222454567</td>
+						<td>Puebla</td>
+					</tr>
+			  <tr>
+						<td>Alejandra Lopez</td>
+						<td>Calle Tulipan L-1130</td>
+						<td>2224340954</td>
+					    <td>Puebla</td>
+					</tr>
+			  <tr>
+						<td>Alicia Manchado</td>
+						<td>Calle Naranjos #312</td>
+						<td>2224092377</td>
+						<td>Puebla</td>
+					</tr>
+	        </tbody>
+		    <foot></foot>
+	      </table>
+  </section>
+		<section>
+		  <h2>Tablas con resaltado flotante</h2>
+		  <table id="t05" border="1">
+		    <thead>
+		      <tr>
+		        <th>Nombre</th>
+		        <th>Direccion</th>
+		        <th>Telefono</th>
+				<th>Ciudad</th>
+	          </tr>
+	        </thead>
+		    <tbody>
+		      <tr>
+		        <td>Luz Barrera </td>
+			    <td>Calle flores #23</td>
+			    <td>2222345678</td>
+				<td>Puebla</td>
+	          </tr>
+	<tr>
+						<td>Maria Ferndanda</td>
+						<td>Calle de la Rosa</td>
+						<td>2234567890</td>
+						 <td>Puebla</td>
+					</tr>
+					<tr>
+						<td>Paulina Jimenez</td>
+						<td>Calle Robles #98</td>
+						<td>222454567</td>
+						<td>Puebla</td>
+					</tr>
+					<tr>
+						<td>Alejandra Lopez</td>
+						<td>Calle Tulipan L-1130</td>
+						<td>2224340954</td>
+					    <td>Puebla</td>
+					</tr>
+					<tr>
+						<td>Alicia Manchado</td>
+						<td>Calle Naranjos #312</td>
+						<td>2224092377</td>
+						<td>Puebla</td>
+					</tr>
+	        </tbody>
+		    <foot>
+			</foot>
+	      </table>
+  </section>
+	<section style="overflow-x:auto">
+		<dt><h2>Tabla responsive</h2></dt>
+		<table id="t06">
+			<thead>
+				<tr>
+					<th>Nombre</th>
+					<th>Puntos</th>
+					<th>Puntos</th>
+					<th>Puntos</th>
+					<th>Puntos</th>
+					<th>Puntos</th>
+					<th>Puntos</th>
+					<th>Puntos</th>
+					<th>Puntos</th>
+					<th>Puntos</th>
+					<th>Puntos</th>
+					<th>Puntos</th>
+					<th>Puntos</th>
+					<th>Puntos</th>
+					<th>Puntos</th>
+					<th>Puntos</th>
+					<th>Puntos</th>
+				</tr>
+			</thead>
+			<tbody>
+				<tr>
+					<td>Luz Barrera</td>
+					<td>34</td>
+					<td>45</td>
+					<td>56</td>
+					<td>34</td>
+					<td>12</td>
+					<td>45</td>
+					<td>78</td>
+					<td>54</td>
+					<td>24</td>
+					<td>56</td>
+					<td>67</td>
+					<td>68</td>
+					<td>67</td>
+					<td>87</td>
+					<td>98</td>
+					<td>09</td>
+				</tr>
+				<tr>
+					<td>Paulina Jimenez</td>
+					<td>54</td>
+					<td>24</td>
+					<td>56</td>
+					<td>67</td>
+					<td>68</td>
+					<td>67</td>
+					<td>87</td>
+					<td>98</td>
+					<td>79</td>
+					<td>34</td>
+					<td>45</td>
+					<td>56</td>
+					<td>34</td>
+					<td>82</td>
+					<td>45</td>
+					<td>78</td>
+				</tr>
+				<tr>
+					<td>Alicia Manchado</td>
+					<td>87</td>
+					<td>98</td>
+					<td>79</td>
+					<td>34</td>
+					<td>45</td>
+					<td>56</td>
+					<td>34</td>
+					<td>82</td>
+					<td>45</td>
+					<td>78</td>
+					<td>54</td>
+					<td>24</td>
+					<td>56</td>
+					<td>67</td>
+					<td>68</td>
+					<td>67</td>
+				</tr>
+			</tbody>
+			<tfoot></tfoot>
+		</table>
+	</section>
+  </main>
+	<footer>
+		<h5>Elaborado por Ale. Sinai Fernandez Lopez</h5>
+	</footer>
+</body>
+</html>
